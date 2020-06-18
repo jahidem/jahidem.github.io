@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(31, 31, 46);
+}
+h1,h2,h3,h4{
+    font-family: sriracha;
+    margin: 10px;
+    font-size: 40px;
+    color: gainsboro;
+}
+a,p{
+    font-family: sriracha;
+    margin: 40px;
+    font-size: 20px;
+    color: rgb(194, 168, 168); 
+}
+.small{
+    width: 240px;
+    height: 240px;
+    border-color: rgb(46, 49, 94);
+    box-shadow: rgb(203, 224, 212);
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 150px;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+}
+.nav-links {
+    display:flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+#chk{
+    opacity: 0;
+}
+
+.nav-links li a{
+    color: rgb(95, 178, 206);
+    text-decoration: none;
+    font-size: 20px;
+}
+.landing{
+    padding-top: 20px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing2{
+    width: 60%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+   .line{
+       width: 30px;
+       height: 4px;
+       background-color:rgb(95, 178, 206);
+       margin: 5px;
+   }
+   nav{
+       position: relative;
+   }
+   .ham{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 2;
+   }
+    .nav-links{
+       position: fixed;
+        background-color: rgb(31, 31, 32);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(1px at 90% -10%);
+        -webkit-clip-path: circle(1px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+   }
+  
+    .nav-links.open{
+        clip-path: circle(1400px at 90% -10%);
+        -webkit-clip-path: circle(1400px at 90% -10%);
+        pointer-events: all;
+    }
+    .landing{
+        flex-direction: column;
+       
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li a{
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transition:  all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition:  all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition:  all .5s ease 0.6s;
+    }
+    li.fade{ 
+        opacity: 1;}
+
+    #chk{
+            opacity: 1;
+            width: 90px;
+            height: 100px;
+            margin-right: auto;
+        margin-top: -50px;
+            padding-left: 19px;
+    }
+}
