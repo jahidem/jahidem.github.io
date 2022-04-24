@@ -66,7 +66,7 @@ section:nth-child(even) {
 #nav-contain .line {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.575);
-  background-image: url(/portfolio/icons/icons8-book-64.png);
+  
   height: 100%;
   width: 4px;
   z-index: 0;
@@ -98,68 +98,68 @@ section:nth-child(even) {
 /*  Hi logo and my Image  */
 
 #email{
-  background-image: url(/images/envelope-open-text-solid.svg);
+  background-image: url(images/envelope-open-text-solid.svg);
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
   transition: transform .5s;
 }
 #email:hover{
-  background-image: url(/icons/envelope-open-text-solid.png);
+  background-image: url(icons/envelope-open-text-solid.png);
   background-repeat: no-repeat;
   transform: scale(1.2);
   
 }
 
 #github{
-  background-image: url(/images/github-brands.svg);
+  background-image: url(images/github-brands.svg);
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
   transition: transform .5s;
 }
 #github:hover{
-  background-image: url(/icons/github-brands.png);
+  background-image: url(icons/github-brands.png);
   background-repeat: no-repeat;
   transform: scale(1.2);
   
 }
 
 #linkedin{
-  background-image: url(/images/linkedin-brands.svg);
+  background-image: url(images/linkedin-brands.svg);
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
   transition: transform .5s;
 }
 #linkedin:hover{
-  background-image: url(/icons/linkedin-brands.png);
+  background-image: url(icons/linkedin-brands.png);
   background-repeat: no-repeat;
   transform: scale(1.2);
 }
 #twitter{
-  background-image: url(/images/twitter-brands.svg);
+  background-image: url(images/twitter-brands.svg);
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
   transition: transform .5s;
 }
 #twitter:hover{
-  background-image: url(/icons/twitter-brands.png);
+  background-image: url(icons/twitter-brands.png);
   background-repeat: no-repeat;
   transform: scale(1.2);
   
 }
 
 #myanimelist{
-  background-image: url(/icons/myanimelist-white.png);
+  background-image: url(icons/myanimelist-white.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
   transition: transform .5s;
 }
 #myanimelist:hover{
-  background-image: url(/icons/myanimelist-blue.png);
+  background-image: url(icons/myanimelist-blue.png);
   background-repeat: no-repeat;
   transform: scale(1.2);
   
