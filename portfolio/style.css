@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inconsolata:wght@500&display=swap");
+/* Global styles*/
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,27 @@
   list-style: none;
   text-decoration: none;
 }
+button{
+    background-color: #61dafbd0;
+    color: #050505;
+    padding: 6px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: none;
+    border: 2px solid #050505a8;
+    border-radius: 8%;
+    margin-left: 1rem;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #050505;
+    border: 2px solid #050505;
+}
+
+
+
 /* Container */
 .container {
   width: 800px;
