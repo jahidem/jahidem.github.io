@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
 }
-button{
+.btn-blue{
     background-color: #61dafbd0;
     color: #050505;
     padding: 6px;
@@ -19,7 +19,7 @@ button{
     margin-left: 1rem;
     
 }
-button:hover{
+.btn-blue:hover{
     cursor: pointer;
     background-color: #ffffff;
     color: #050505;
