@@ -355,6 +355,21 @@ body {
   z-index: 3;
 }
 
+.project-entry #tinguti2{
+  
+  filter: blur(1.5px);
+  height: 150px;
+  
+  
+}
+.project-entry #tinguti2:hover{
+  filter: blur(0px);
+  transform: scale(2);
+  border: 2px solid #61dafb;
+  border-radius: 3px;
+  z-index: 3;
+}
+
 
 
 
