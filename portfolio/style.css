@@ -11,15 +11,19 @@
 #About #Education{
     background-color: #282c34;
 }
-p{
+p a{
+    color: #ececec;
     font-size: 18px;
     font-family: "Inconsolata", monospace;
 }
 section {
-  min-height: 800px;
+  min-height: 100vh;
+  padding: 3rem;
+  
 }
 section:nth-child(even) {
   background-color: #282c34;
+  
 }
 .btn-blue {
   background-color: #61dafbd0;
@@ -41,10 +45,11 @@ section:nth-child(even) {
 
 /* Container */
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    
   }
 /*    Nav    */
 #nav-contain {
@@ -70,10 +75,10 @@ section:nth-child(even) {
   z-index: 1;
 }
 .circle {
-  background-color: #61dafb;
-  width: 40px;
+  background-color: #2bc1eb;
+  width: 80px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,14 +87,85 @@ section:nth-child(even) {
 #nav-contain .circle p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
+  text-shadow: 0.4px 0.4px #050505;
 }
 #nav-contain .circle:hover {
   background-color: #050505;
 }
 
 /*  Hi logo and my Image  */
+
+#email{
+  background-image: url(/images/envelope-open-text-solid.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  transition: transform .5s;
+}
+#email:hover{
+  background-image: url(/icons/envelope-open-text-solid.png);
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+  
+}
+
+#github{
+  background-image: url(/images/github-brands.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  transition: transform .5s;
+}
+#github:hover{
+  background-image: url(/icons/github-brands.png);
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+  
+}
+
+#linkedin{
+  background-image: url(/images/linkedin-brands.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  transition: transform .5s;
+}
+#linkedin:hover{
+  background-image: url(/icons/linkedin-brands.png);
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+}
+#twitter{
+  background-image: url(/images/twitter-brands.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  transition: transform .5s;
+}
+#twitter:hover{
+  background-image: url(/icons/twitter-brands.png);
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+  
+}
+
+#myanimelist{
+  background-image: url(/icons/myanimelist-white.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  transition: transform .5s;
+}
+#myanimelist:hover{
+  background-image: url(/icons/myanimelist-blue.png);
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+  
+}
+
+
 
 .hi-contain {
   font-size: 2rem;
@@ -101,9 +177,7 @@ body {
   background-color: #ffffff;
 }
 
-#About {
-  padding-top: 5rem;
-}
+
 .hi-img {
   display: flex;
   flex-direction: row;
@@ -126,7 +200,7 @@ body {
   align-items: center;
 }
 .logo-contain {
-  width: 200px;
+  width: 230px;
   padding-right: 3rem;
   display: flex;
   justify-content: space-between;
@@ -136,10 +210,10 @@ body {
 
 #About-contain {
   margin-top: 6rem;
-  margin-right: 3rem;
   padding: 1.5rem;
   align-self: flex-end;
-  max-width: 700px;
+  
+  max-width: 650px;
   border: 6px solid #ececec;
   border-radius: 5%;
 }
@@ -159,7 +233,6 @@ body {
 
 #Education-contain {
   margin-top: 6rem;
-  margin-right: 3rem;
   padding: 1.5rem;
   align-self: flex-end;
   max-width: 700px;
@@ -180,10 +253,11 @@ body {
 }
 
 #Education .all-edu{
+    max-width: 700px;
     align-self: flex-end;
     margin-top: 5rem;
     display: flex;
-    align-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .img-edu{
@@ -191,21 +265,95 @@ body {
     align-items: center;
 }
 .img-edu h1{
+    font-size: 20px;
     padding: 1rem;
     color: #ececec;
 }
 .edu-contain{
+    max-width: 260px;
     color: #ececec;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 1rem;
 }
-.edu-details{
-    padding: 1rem;
-    padding-left: 2rem;
+.edu-contain p{
+  font-size: 16px;;
 }
 
 
+/****************Projects**********/
 
+#Project-contain{
+  margin-top: 2rem;
+  background-color: #ecececa9;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-self:flex-end;
+  flex-wrap: wrap;
+
+}
+.project-entry{
+  color: #ececec;
+  padding: 1rem;
+  border: 4px solid #050505;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+  border-radius: 7px;
+  max-height: 359px;
+  max-width: 200px;
+  background-color: #282c34;
+  margin: 0.5rem 0.5rem;
+  z-index: 2;
+}
+.project-entry  a{
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ececec;
+}
+.project-entry  p{
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  font-weight: 500;
+}
+.project-entry span{
+  color: #61dafb;
+}
+.pro{
+  align-self: center;
+  padding: 1rem;
+  text-decoration:underline;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.project-entry #diary{
+  filter: blur(1.5px);
+  width: 160px;
+ 
+  
+}
+.project-entry #diary:hover{
+  filter: blur(0px);
+  transform: scale(2);
+  border: 2px solid #61dafb;
+  border-radius: 3px;
+  z-index: 3;
+  
+}
+
+.project-entry #tinguti{
+  
+  filter: blur(1.5px);
+  height: 150px;
+  
+  
+}
+.project-entry #tinguti:hover{
+  filter: blur(0px);
+  transform: scale(2);
+  border: 2px solid #61dafb;
+  border-radius: 3px;
+  z-index: 3;
+}
 
 
 
@@ -215,13 +363,11 @@ body {
 #Footer {
   display: flex;
   justify-content: center;
-  background-color: #050505e7;
+  background-color: #050505da;
 }
 #Footer p {
-  padding: 10px 0px;
+  padding: 5px 0px;
   color: #61dafbbb;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
 
-
-/*dgddsgsdag*/
