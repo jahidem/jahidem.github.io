@@ -92,7 +92,11 @@ section:nth-child(even) {
     box-shadow: var(--dark-shadow);
   }
 /*    Nav    */
-
+#nav-contain {
+  top: 60%;
+  position: fixed;
+  transition: all 2s ease;
+}
 #nav-contain ul {
   height: 280px;
   display: flex;
@@ -443,11 +447,7 @@ body {
 #float-btn.float-btn-hide{
   left: -50px;
 }
-#nav-contain {
-  top: 60%;
-  position: fixed;
-  transition: all 2s ease;
-}
+
 #nav-contain.nav-appear{
   top: 60%;
 }
