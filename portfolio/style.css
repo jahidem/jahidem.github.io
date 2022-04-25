@@ -444,6 +444,14 @@ body {
   font-weight: 550;
   font-size: 1rem;
 }
+.ski{
+  align-self: center;
+  color: #ececec;
+  padding: 1rem;
+  text-decoration:underline;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
 
 
 
