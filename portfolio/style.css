@@ -94,6 +94,7 @@ section:nth-child(even) {
 #nav-contain {
   top: 60%;
   position: fixed;
+  z-index: 5;
 }
 #nav-contain ul {
   height: 280px;
@@ -382,7 +383,7 @@ body {
   
   filter: blur(1.5px);
   height: 150px;
-  
+  z-index: 2;
   
 }
 .project-entry #tinguti:hover{
@@ -397,7 +398,7 @@ body {
   
   filter: blur(1.5px);
   height: 150px;
-  
+  z-index: 2;
   
 }
 .project-entry #tinguti2:hover{
