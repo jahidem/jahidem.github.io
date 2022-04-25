@@ -92,10 +92,7 @@ section:nth-child(even) {
     box-shadow: var(--dark-shadow);
   }
 /*    Nav    */
-#nav-contain {
-  top: 60%;
-  position: fixed;
-}
+
 #nav-contain ul {
   height: 280px;
   display: flex;
@@ -441,12 +438,25 @@ body {
   position: fixed;
   cursor: pointer;
   opacity: 0;
+  transition: all 0.8s ease;
 }
+#float-btn.float-btn-hide{
+  left: -50px;
+}
+#nav-contain {
+  top: 60%;
+  position: fixed;
+  transition: all 2s ease;
+}
+#nav-contain.nav-appear{
+  top: 60%;
+}
+
   /**** Media Query ***/
 
   @media(max-width:900px) {
     #nav-contain {
-      opacity: 0;
+      top: 100%;
       left: 10px;
       
     }
