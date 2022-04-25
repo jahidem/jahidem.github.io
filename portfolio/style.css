@@ -95,6 +95,7 @@ section:nth-child(even) {
 #nav-contain {
   top: 60%;
   position: fixed;
+  transition: all 2s ease;
   z-index: 5;
 }
 #nav-contain ul {
@@ -442,12 +443,21 @@ body {
   position: fixed;
   cursor: pointer;
   opacity: 0;
+  transition: all 0.8s ease;
 }
+#float-btn.float-btn-hide{
+  left: -50px;
+}
+
+#nav-contain.nav-appear{
+  top: 60%;
+}
+
   /**** Media Query ***/
 
   @media(max-width:900px) {
     #nav-contain {
-      opacity: 0;
+      top: 100%;
       left: 10px;
       
     }
