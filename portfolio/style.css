@@ -84,6 +84,7 @@ section:nth-child(even) {
 /* Container */
 .container {
     max-width: 1000px;
+    min-height: 100vh;
     margin: auto;
     padding: 3rem;
     display: flex;
