@@ -3,8 +3,8 @@ const nav = document.getElementById("nav-contain");
 
 float_btn.addEventListener("click",()=>{
     
-    nav.style.opacity =1;
-    float_btn.style.opacity = 0;
+    nav.classList.add("nav-appear");
+    float_btn.classList.add("float-btn-hide");
     
     
   //  document.querySelector(".container").style.filter = "blur(2px)";
@@ -15,6 +15,6 @@ nav.addEventListener("click",()=>{
     var width = box.offsetWidth;
 
     if(width<901){
-    nav.style.opacity = 0;
-    float_btn.style.opacity = 1;}
+      nav.classList.remove("nav-appear");
+      float_btn.classList.remove("float-btn-hide");}
 });
