@@ -467,14 +467,14 @@ body {
 }
 
 #nav-contain.nav-appear{
-  top: 60%;
+  bottom: 4rem;
 }
 
   /**** Media Query ***/
 
   @media(max-width:900px) {
     #nav-contain {
-      top: 110%;
+      bottom: 0%;
       left: 10px;
       
     }
