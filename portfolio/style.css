@@ -474,7 +474,7 @@ body {
 
   @media(max-width:900px) {
     #nav-contain {
-      bottom: 0%;
+      bottom: -50%;
       left: 10px;
       
     }
