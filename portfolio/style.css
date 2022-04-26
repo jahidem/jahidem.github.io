@@ -464,12 +464,14 @@ body {
 }
 #float-btn.float-btn-hide{
   left: -50px;
+  opacity: 0;
 }
 #arrow{
   transition: all 1s ease;
 }
 #nav-contain.nav-appear{
   bottom: 4rem;
+  opacity: 1;
 }
 .move-arrow{
   transform: translateX(5px);
@@ -480,6 +482,7 @@ body {
     #nav-contain {
       bottom: -100%;
       left: 10px;
+      opacity: 0;
       
     }
     #float-btn{
