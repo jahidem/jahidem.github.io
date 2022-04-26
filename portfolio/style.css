@@ -61,7 +61,7 @@ section:nth-child(even) {
   }
 /*    Nav    */
 #nav-contain {
-  top: 60%;
+  bottom: 4rem;
   position: fixed;
   transition: all 2s ease;
   z-index: 5;
@@ -86,8 +86,6 @@ section:nth-child(even) {
 }
 .circle {
   background-color: #2bc1eb;
-  width: 80px;
-  height: 40px;
   border-radius: 10%;
   display: flex;
   justify-content: center;
@@ -95,6 +93,7 @@ section:nth-child(even) {
   box-shadow: 1px 1px 1px #050505;
 }
 #nav-contain .circle p {
+  padding: 0.6rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -475,7 +474,7 @@ body {
 
   @media(max-width:900px) {
     #nav-contain {
-      top: 100%;
+      top: 110%;
       left: 10px;
       
     }
