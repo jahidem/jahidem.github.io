@@ -186,7 +186,7 @@ section:nth-child(even) {
   font-size: 2rem;
   color: #282c34;
   font-family: "Caveat", cursive;
-  padding: 2rem;
+  padding: 1rem;
 }
 body {
   background-color: #ffffff;
