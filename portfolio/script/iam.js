@@ -42,7 +42,12 @@ setInterval(()=>{
 var remv =1;
 var arr = document.getElementById("arrow");
 setInterval(()=>{
-    if(remv) arr.classList.add("move-arrow");
-    else arr.classList.remove("move-arrow");
+    if(remv) {
+        
+        arr.classList.add("move-arrow");
+    }
+    else{
+        arr.classList.remove("move-arrow");
+        }
     remv++;remv%=2;
 },900);
