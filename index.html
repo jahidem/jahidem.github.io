@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Meow</title>
-</head>
-<body>
-    <nav>
-        <div class="ham">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="whole">
+      <div id="ro-nine">
+        <p id="big-code">CODE!</p>
+      </div>
+      <div id="ro-nine2">
+        <p id="big-debug">&DEBUG!</p>
+      </div>
+      <div class="container">
+        <div class="hi-img-logo-typed">
+          <div class="hi-typed">
+            <div class="hi-there">
+              <p class="hi">Hi there,</p>
+              <p class="im">&ThickSpace;&ThickSpace;&ThickSpace;I'm Jahid</p>
+            </div>
+            <p class="typed">
+              &ThickSpace;&ThickSpace;&ThickSpace; I'm a
+              <span id="chng-txt"> Programmer.</span><span id="blink-cursor">|</span>
+            
+            </p>
+          </div>
+
+          <div class="hi-img-logo">
+            <img src="./src/jahid.png" alt="" class="jahid-img" />
+            <div class="logos">
+              <i class="fa-solid fa-envelope fa-xl logo"></i>
+              <i class="fa-brands fa-github fa-xl logo"></i>
+              <i class="fa-brands fa-twitter fa-xl logo"></i>
+              <i class="fa-brands fa-linkedin-in fa-xl logo"></i>
+            </div>
+          </div>
         </div>
+        <nav>
+          <ul>
+            <li class="btn About">About</li>
+            <li class="btn Projects">Projects</li>
+            <li class="btn Skills">Skills</li>
+            <li class="btn Contact">Contact</li>
+          </ul>
+        </nav>
+        <hr />
+        <div id="window">
+                <div id="About">
+                  <div class="inside">
+                    <div class="work-contain sha-contain">
+                      <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt illo ab rerum aut at magni maiores a, ratione sapiente, iure reprehenderit voluptatum non architecto corporis quod qui repudiandae possimus.</P>
 
-        
-        <ul class="nav-links">
-            <img id="chk" src="./images/logo.png">
-            <li><a href="./html/project.html">My Toy Projects</a></li>
-            <li><a href="./html/steps.html">My Tiny Steps</a></li>
-            <li><a href="./html/about.html">About me</a></li>
-        </ul>
-    </nav>
-    <section class="landing">
-        <img class="small" src="images/cut.jpg">
-    
-    <h1>Hi there, I'm Billi.</h1>
-</section>
-    <script src="./script/app.js"></script>
-    <section class="landing2">
-        <p>
-            I like to explore the fascinating world of CS.
-            In my free time I like to lick my paw and of course I like Tuna!
-            This is my catty website.you're welcome here to explore my projects.
-        </p>
-    </section>
+                  </div>
 
-<a href="./portfolio/index.html">My Portfolio</a>
-</body>
-</html>
+
+
+                    <div class="edu-contain sha-contain">
+                    <h1 class="h1edu-contain">Education</h1>
+                    <hr style="align-self: center;"/>
+                      <div class="edu-entry">
+                        <div class="img-edu">
+                          <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                          <h1>College Education</h1>
+                        </div>
+                        <div class="edu-details">
+                          <p>Mohammadpur kendriya college</p>
+                          <p style="font-style: italic">Dhaka, Bangladesh</p>
+                        </div>
+                      </div>
+                      <div class="edu-entry">
+                        <div class="img-edu">
+                          <i class="fa-solid fa-book fa-2xl"></i>
+                          <h1>College Education</h1>
+                        </div>
+                        <div class="edu-details">
+                          <p>Mohammadpur kendriya college</p>
+                          <p style="font-style: italic">Dhaka, Bangladesh</p>
+                        </div>
+                      </div>
+                      <div class="edu-entry">
+                        <div class="img-edu">
+                          <i class="fa-solid fa-book-open fa-2xl"></i>
+                          <h1>Online Courses</h1>
+                        </div>
+                        <div class="edu-details">
+                          <p>CS50's Introduction to Computer Science</p>
+                          <a href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home"
+                          target="_blank"><p style="font-style: italic" >HarvardX CS50x, edX </p></a>
+                        </div>
+                      </div>
+
+                  </div>
+                  
+
+
+
+
+
+                  <div class="other-contain sha-contain">
+                   
+                  
+                    <div class="edu-entry">
+                      <div class="img-edu">
+                        <i class="fa-solid fa-briefcase fa-2xl logo"></i>
+                        <h1>Work Experience</h1>
+                      </div>
+                      <div class="edu-details">
+                        <p>No Work experience</p>
+                        <p style="font-style: italic">Dhaka, Bangladesh</p>
+                      </div>
+                  </div>
+                </div>
+        </div>
+          </div>
+        <div id="Projects">projects</div>
+        <div id="Skills">Skills</div>
+        <div id="Contact">Contact</div>
+      </div>
+    </div>
+  <script src="./src/ims.js"></script>
+  <script src="./src/navigate.js"></script>
+  </body>
+  </html>
