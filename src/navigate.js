@@ -1,14 +1,24 @@
 const winList = ['About', 'Projects', 'Skills', 'Contact'];
-var nowDisplay = 1;
+winList.forEach((e)=>{
+  document.getElementById(e).style.display = 'none'
+})
 
-winList.forEach((e)=> document.getElementById(e).style.display = 'none');
-winList.forEach((e)=> document.querySelector('.'+e).style.color= "#1693b3");
-    document.getElementById(winList[nowDisplay - 1]).style.display = 'block';
-    document.querySelector('.'+winList[nowDisplay-1]).style.color = 'black';
+var nowDisplay = 3;
+
+var nowBtn = document.querySelector('.'+winList[nowDisplay-1]);
+nowBtn.style.color = "black";
+nowBtn.classList.add('focus-on');
+document.getElementById(winList[nowDisplay - 1]).style.display = 'block';
+
 const btns = document.querySelectorAll('.btn');
 
 btns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
+    nowBtn = document.querySelector('.'+winList[nowDisplay-1]);
+    nowBtn.style.color = "#1693b3";
+    nowBtn.classList.remove('focus-on');
+    document.getElementById(winList[nowDisplay - 1]).style.display = 'none';
+
     const styles = e.currentTarget.classList;
     if (styles.contains('About')) {
       nowDisplay = 1;
@@ -20,9 +30,10 @@ btns.forEach((btn) => {
       nowDisplay = 4;
     }
 
-    winList.forEach((e)=> document.getElementById(e).style.display = 'none');
-    winList.forEach((e)=> document.querySelector('.'+e).style.color= "#1693b3");
+    nowBtn = document.querySelector('.'+winList[nowDisplay-1]);
+    nowBtn.style.color = "black";
+    nowBtn.classList.add('focus-on');
     document.getElementById(winList[nowDisplay - 1]).style.display = 'block';
-    document.querySelector('.'+winList[nowDisplay-1]).style.color = 'black';
+    
   });
 });
