@@ -97,7 +97,7 @@ body {
 
 #big-code {
   font-family: 'Fira Code', monospace;
-  color: hsla(0, 100%, 50%, 0.714);
+  color: #ff0000b6;
   font-size: 80px;
   text-shadow: -20px 10px 8px rgba(0, 0, 0, 0.445);
   font-weight: 900;
@@ -307,7 +307,7 @@ nav ul li {
   grid-row: 1/1;
   grid-column: 2/2;
 
-  background-color: rgb(255, 0, 0);
+  background-color: #ff0000;
 }
 #Skills .down-skill {
   grid-row: 2/2;
@@ -377,14 +377,14 @@ nav ul li {
   display: flex;
   justify-content: space-between;
 }
-.fro-ba li {
+#Skills .fro-ba li p {
   background-color: #9fe2e7;
   border-radius: 4px;
   padding: 2px 8px;
 }
 #coding-contain {
   padding: 2rem;
-  border: 3px solid rgb(221, 168, 168);
+  border: 3px solid rgb(218, 218, 218);
   border-radius: 9px;
   margin-top: 2rem;
   width: 100%;
@@ -392,6 +392,29 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.code-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 170px;
+  height: 110px;
+  padding: 6px;
+  background-color: #22272e;
+  transform: translate(0px, -20px);
+}
+#code-box-img {
+  width: 160px;
+  max-height: 85px;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+#coding-txt {
+  color: #48a114;
+  font-family: 'Fira Code', monospace;
+  font-size: 9px;
 }
 
 @media (max-width: 600px) {
@@ -411,17 +434,4 @@ nav ul li {
   align-items: center;
   justify-content: center;
   height: 400px;
-}
-.code-box{
-  position: absolute;
-  width: 170px;
-  height: 110px;
-  padding: 4px;
-  background-color: #0084ff2f;
-  transform: translate(0px,-20px);
-}
-#coding-txt{
-  color: wheat;
-  font-family: 'Fira Code', monospace;
-  font-size: 10px;
 }
