@@ -7,10 +7,10 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-p{
+p {
   font-family: 'Tajawal', sans-serif;
 }
-.hr{
+.hr {
   border: 1px solid #bbbbbb;
   width: 80%;
 }
@@ -32,18 +32,18 @@ p{
   --fixed-width: 620px;
 }
 
-body{
+body {
   width: 100vw;
   min-height: 100vh;
-  background: url('./helo.png')  bottom  left no-repeat,
-              url('./lolop.png') bottom right no-repeat;
+  background: url('./helo.png') bottom left no-repeat,
+    url('./lolop.png') bottom right no-repeat;
 }
-.whole{
+.whole {
   width: 100vw;
   min-height: 100vh;
   background-color: #f9fefdc2;
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,58 +52,57 @@ body{
   margin: auto;
   height: 100%;
 }
-.hi-img-logo-typed{
-  padding: 3rem 1rem;
+.hi-img-logo-typed {
+  padding: 3rem 0;
   display: flex;
   justify-content: space-between;
 }
-.hi-img-logo{
+.hi-img-logo {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.hi-there{
-  
-  font-family: 'Patrick Hand', cursive;  
+.hi-there {
+  font-family: 'Patrick Hand', cursive;
   font-size: 45px;
   text-shadow: 1px 2px 3px rgba(12, 199, 174, 0.801);
   margin: 2rem 0;
   letter-spacing: 1px;
 }
 
-.typed{
+.typed {
   width: 300px;
   font-family: 'Tajawal', sans-serif;
   font-size: 28px;
-  color: #0B5663;
+  color: #0b5663;
   margin-left: 1rem;
 }
-#chng-txt{
-  color: #FC7877;
+#chng-txt {
+  color: #fc7877;
 }
-.logos{
-  margin-left: 1rem;
+.logos {
   align-self: center;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
-.jahid-img{
+.jahid-img {
   align-self: center;
   height: 160px;
   width: 160px;
 }
-.logo{
-  color: #4A90E2;
+.logo {
+  color: #4a90e2;
+  margin: 1.5rem 0.5rem;
 }
 
-#big-code{
-  font-family: 'Fira Code', monospace; 
-   color: hsla(0, 100%, 50%, 0.714);
+#big-code {
+  font-family: 'Fira Code', monospace;
+  color: hsla(0, 100%, 50%, 0.714);
   font-size: 80px;
   text-shadow: -20px 10px 8px rgba(0, 0, 0, 0.445);
-  font-weight:900;
+  font-weight: 900;
 }
-#ro-nine{
+#ro-nine {
   position: absolute;
   top: 200px;
   left: -25px;
@@ -112,7 +111,7 @@ body{
   letter-spacing: 2px;
 }
 
-#ro-nine2{
+#ro-nine2 {
   position: absolute;
   bottom: 200px;
   right: -25px;
@@ -120,98 +119,84 @@ body{
   z-index: -3;
   letter-spacing: 2px;
 }
-#big-debug{
-  font-family: 'Fira Code', monospace;  color: #0084ff;
+#big-debug {
+  font-family: 'Fira Code', monospace;
+  color: #0084ff;
   font-size: 75px;
   text-shadow: 18px -8px 8px rgba(0, 0, 0, 0.445);
-  font-weight:900;
+  font-weight: 900;
 }
-
 
 /*----------------------*/
 /*------ Nav    --------*/
 /*----------------------*/
 
-
-
-.focus-on{
+.focus-on {
   border: 2px solid #5b7dda;
   border-radius: 3px;
 }
-nav{
+nav {
   max-width: 600px;
   margin: 1rem 0rem 0.5rem 0rem;
 }
-nav ul{
+nav ul {
   display: flex;
 }
-nav ul li{
+nav ul li {
   padding: 0rem 10px;
   font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   color: #1693b3;
   cursor: pointer;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   font-weight: 600;
   z-index: 1;
 }
 
 @media (max-width: 1366px) {
-  .hi-img-logo{
+  .hi-img-logo {
     flex-direction: column;
   }
-  .logos{
+  .logos {
     display: flex;
     flex-direction: row;
-    
-  }
-  
-  .logo{
-    margin: 1.5rem 0.5rem;
-  }
-  #big-code{
-    font-size: 70px;
-  }
-  #ro-nine{
-    top: 150px;
-    left: -45px;
-    
-  }
-  #ro-nine2{
-    bottom: 150px;
-    right: -110px;
-    
   }
 
- 
-  .whole{
+  .logo {
+    margin: 1.5rem 0.5rem;
+  }
+  #big-code {
+    font-size: 70px;
+  }
+  #ro-nine {
+    top: 150px;
+    left: -45px;
+  }
+  #ro-nine2 {
+    bottom: 150px;
+    right: -110px;
+  }
+
+  .whole {
     background-color: #f9fefdd5;
   }
 }
 @media (max-width: 600px) {
-  .hi-there{
+  .hi-there {
     font-size: 24px;
   }
-  .typed{
+  .typed {
     width: 170px;
     font-size: 16px;
   }
 }
 
-
-
-
-
-
-
-
-
 /*----------------------*/
 /*------ Window --------*/
 /*----------------------*/
 
-#window{
-  padding: 2rem 1rem ;
+#window {
+  padding: 2rem 1rem;
   height: 400px;
   width: 90%;
   height: fit-content;
@@ -220,37 +205,35 @@ nav ul li{
 /*----------------------*/
 /*------ About- --------*/
 /*----------------------*/
-#About .inside{
+#About .inside {
   width: 100%;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   grid-template-rows: 1fr 1fr;
 }
-.edu-contain{
+.edu-contain {
   grid-row: 1/3;
   grid-column: 1/1;
   background-color: black;
 }
 
-.edu-hr{
+.edu-hr {
   width: 80%;
   border-color: #f7f5f5;
 }
-.work-contain{
-  grid-row:  1/1;
+.work-contain {
+  grid-row: 1/1;
   grid-column: 2/2;
-
 
   background-color: rgb(255, 0, 0);
 }
-.other-contain{
+.other-contain {
   grid-row: 2/2;
   grid-column: 2/2;
   background-color: rgb(65, 92, 17);
-  
 }
-.sha-contain{
+.sha-contain {
   padding: 1rem;
   border-radius: 4px;
   display: flex;
@@ -259,164 +242,186 @@ nav ul li{
   background-color: #ffffff;
 }
 
-.edu-entry{
+.edu-entry {
   padding: 1rem;
 }
-.edu-entry .img-edu{
+.edu-entry .img-edu {
   display: flex;
   align-items: center;
-  
 }
-.edu-entry i{
-  color: #4A90E2;
+.edu-entry i {
+  color: #4a90e2;
 }
-.edu-entry h1{
+.edu-entry h1 {
   padding-left: 5px;
 
   font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   color: rgb(54, 54, 54);
 }
-.edu-details{
+.edu-details {
   font-family: 'Tajawal', sans-serif;
-  font-size: 14px; 
+  font-size: 14px;
   color: #474747;
-  
+
   padding: 1rem;
 }
-.h1edu-contain{
+.h1edu-contain {
   padding-bottom: 0.5rem;
   letter-spacing: 1px;
-  text-align: center;font-size: 24px;
+  text-align: center;
+  font-size: 24px;
   color: #076177;
-   font-family:  'Patrick Hand', cursive; 
+  font-family: 'Patrick Hand', cursive;
 }
-.work-contain{
+.work-contain {
   font-family: 'Tajawal', sans-serif;
-  font-size: 16px; 
+  font-size: 16px;
   color: #000000;
 }
 @media (max-width: 600px) {
-  #About .inside{
+  #About .inside {
     display: flex;
     flex-direction: column;
   }
 }
 
-
-
-
 /*----------------------*/
 /*------ Skills- --------*/
 /*----------------------*/
 
-
-
-#Skills .inside{
+#Skills .inside {
   width: 100%;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   grid-template-rows: 1.5fr 1fr;
 }
-.fro-ba{
+.fro-ba {
   grid-row: 1/3;
   grid-column: 1/1;
   background-color: black;
 }
 
-
-#Skills .about{
-  grid-row:  1/1;
+#Skills .about {
+  grid-row: 1/1;
   grid-column: 2/2;
 
-  
   background-color: rgb(255, 0, 0);
 }
-#Skills .down-skill{
+#Skills .down-skill {
   grid-row: 2/2;
   grid-column: 2/2;
   background-color: rgb(65, 92, 17);
-  
 }
 
-#Skills .sha-contain{
+#Skills .sha-contain {
   padding: 1rem;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   border: 1px solid #e2e9e7;
   background-color: #ffffff;
+  justify-content: space-evenly;
 }
-#Skills h1{
+#Skills h1 {
   align-self: center;
   padding-bottom: 0;
   letter-spacing: 1px;
   font-size: 24px;
   color: #076177;
-   font-family:  'Patrick Hand', cursive; 
+  font-family: 'Patrick Hand', cursive;
 }
-#Skills h2{
+#Skills h2 {
   font-family: 'Tajawal', sans-serif;
   align-self: center;
   padding-bottom: 0.5rem;
   font-size: 18px;
   color: #555454;
 }
-#Skills .down-skill li{
+#Skills .down-skill li {
   display: inline-block;
   align-self: flex-end;
   color: #0f365a;
 }
 
-#Skills .down-skill ul{
+#Skills .down-skill ul {
   margin: 1rem 0;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
 }
 
-#Skills .web-mobile{
+#Skills .web-mobile {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
-#Skills .about li{
+#Skills .about li {
   display: inline-block;
   align-self: center;
   padding: 5px;
   color: #474747;
 }
-#Skills .about ul{
-  display:flex;
+#Skills .about ul {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.logo-fro{
+.logo-fro {
   width: 30px;
 }
 
-.fro-ba ul{
+.fro-ba ul {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
 }
-.fro-ba li{
+.fro-ba li {
   background-color: #9fe2e7;
   border-radius: 4px;
   padding: 2px 8px;
 }
-#coding-contain{
+#coding-contain {
+  padding: 2rem;
   border: 3px solid rgb(221, 168, 168);
   border-radius: 9px;
   margin-top: 2rem;
   width: 100%;
   min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
-  #Skills .inside{
+  #Skills .inside {
     display: flex;
     flex-direction: column;
   }
+}
+
+/*----------------------*/
+/*------ Contact --------*/
+/*----------------------*/
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.code-box{
+  position: absolute;
+  width: 170px;
+  height: 110px;
+  padding: 4px;
+  background-color: #0084ff2f;
+  transform: translate(0px,-20px);
+}
+#coding-txt{
+  color: wheat;
+  font-family: 'Fira Code', monospace;
+  font-size: 10px;
 }
