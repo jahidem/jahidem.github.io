@@ -7,6 +7,12 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
+
+
+/*----------------------*/
+/*------ Globals --------*/
+/*----------------------*/
 p {
   font-family: 'Tajawal', sans-serif;
 }
@@ -17,7 +23,7 @@ p {
 :root {
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --clr-secondary: #2bc1eb;
+  --clr-secondary: #2bc1eb96;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   --ff-para: 'Archivo', sans-serif;
@@ -37,6 +43,19 @@ body {
   min-height: 100vh;
   background: url('./helo.png') bottom left no-repeat,
     url('./lolop.png') bottom right no-repeat;
+}
+
+.btn-blue {
+  background-color: var(--clr-secondary);
+  color: #050505;
+  padding: 6px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: none;
+  border: 2px solid #050505a8;
+  border-radius: 11%;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 .whole {
   width: 100vw;
@@ -222,7 +241,9 @@ nav ul li {
   width: 80%;
   border-color: #f7f5f5;
 }
+
 .work-contain {
+  justify-content: space-evenly;
   grid-row: 1/1;
   grid-column: 2/2;
 
@@ -279,6 +300,12 @@ nav ul li {
   font-size: 16px;
   color: #000000;
 }
+
+a{
+  color: #ececec;
+  font-size: 18px;
+}
+
 @media (max-width: 600px) {
   #About .inside {
     display: flex;
@@ -428,6 +455,17 @@ nav ul li {
 /*------ Contact --------*/
 /*----------------------*/
 
+
+.contact-form  h2 {
+  align-self: center;
+  padding-bottom: 0;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #076177;
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 1rem;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -435,3 +473,12 @@ nav ul li {
   justify-content: center;
   height: 400px;
 }
+
+ .contact-form input{
+   height: 100px;
+   width: 400px;
+   margin-bottom: 1rem;
+ }
+ .contact-form button{
+    margin-top: 0rem;
+ }
