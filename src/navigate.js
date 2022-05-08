@@ -3,7 +3,7 @@ winList.forEach((e) => {
   document.getElementById(e).style.display = 'none';
 });
 
-var nowDisplay = 4;
+var nowDisplay = 1;
 
 var nowBtn = document.querySelector('.' + winList[nowDisplay - 1]);
 nowBtn.style.color = 'black';
