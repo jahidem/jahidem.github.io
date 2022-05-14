@@ -594,8 +594,8 @@ footer{
   height: 370px;
   width:240px ;
   border-radius: 10px;
-  background: rgba(2, 255, 238, 0.363);
-  background: linear-gradient(0deg, #6efff541 0%, #0486ff23 50%);
+  background: rgba(2, 255, 238, 0.63);
+  background: linear-gradient(0deg, #6efff567 0%, #0486ff52 50%);
   border: 3px solid rgba(0, 0, 0, 0.432);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
 }
@@ -605,9 +605,8 @@ footer{
 .tags .p{
   font-family: var(--ff-secondary);
   margin-left: 1rem;
-  padding: 3px;
-  padding: 4px;
-  background-color: #e76161d0;
+  padding: 4px 8px;
+  background-color: #ff3c00b6;
   color: white;
   font-weight: bold;
   border-radius: 5px;
