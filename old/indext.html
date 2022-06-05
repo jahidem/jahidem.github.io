@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "icon" type = "image/png" href = "./kindpng_343936.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Register for Reception</title>
+</head>
+<body>
+  <div id="container">
+  <h1 class="tittle nsns">IIT Farewell and Freshers' Reception:</h1>
+    <form class="sns ">
+      
+      <input class="text" id="Sname" type="text" placeholder="Student name"><br>
+      
+      <input class="text"  type="email" placeholder="Email"><br>
+
+      <input class="text" id="Pnumber" type="text" placeholder="Phone number"><br>
+
+      <p class="subtittle">IIT Batch:</p>
+      
+      <div class="rdi">
+      <input type="radio" id="batch" name="batch" value="IIT-10">
+      <label for="IIT-10">IIT-10</label>
+    </div>
+
+      <div class="rdi">
+      <input type="radio" id="batch" name="batch" value="IIT-11">
+      <label for="IIT-11">IIT-11</label>
+    </div>
+
+      <div class="rdi">
+      <input type="radio" id="batch" checked name="batch" value="IIT-12">
+      <label for="IIT-12">IIT-12</label>
+    </div>
+
+    <div class="chk">
+    <input type="checkbox" id="present" name="present" value="present">
+    <label for="present"> I'll attend the program</label><br>
+      </div>
+      <div class="btn">
+        <input type = "button" id = "btnApply" value = "Register"  onclick="handleClick()">
+      <input type="reset">
+    </div>
+    
+
+
+    </form>
+    <a  href="tables.html" style="color: rgb(170, 170, 170);">Participants list
+</div>
+
+<script src="./indexscript.js"></script>
+</body>
+</html>
