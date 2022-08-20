@@ -6,7 +6,6 @@ winList.forEach((e) => {
 var nowDisplay = 1;
 
 var nowBtn = document.querySelector('.' + winList[nowDisplay - 1]);
-nowBtn.style.color = 'black';
 nowBtn.classList.add('focus-on');
 document.getElementById(winList[nowDisplay - 1]).style.display = 'block';
 
@@ -15,7 +14,7 @@ const btns = document.querySelectorAll('.btn');
 btns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     nowBtn = document.querySelector('.' + winList[nowDisplay - 1]);
-    nowBtn.style.color = '#1693b3';
+    
     nowBtn.classList.remove('focus-on');
     document.getElementById(winList[nowDisplay - 1]).style.display = 'none';
 
@@ -31,7 +30,7 @@ btns.forEach((btn) => {
     }
 
     nowBtn = document.querySelector('.' + winList[nowDisplay - 1]);
-    nowBtn.style.color = 'black';
+    
     nowBtn.classList.add('focus-on');
     document.getElementById(winList[nowDisplay - 1]).style.display = 'block';
   });
