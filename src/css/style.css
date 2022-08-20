@@ -69,6 +69,7 @@ body {
   border: 5px solid #00000000;
   border-radius: 7px;
   cursor: pointer;
+  
 }
 .btn-blue:hover{
    color: #ffffff;
@@ -590,8 +591,8 @@ a{
   color: #041e36;
 }
 .send{
-  width:8 0px;
-
+  width:70px;
+  margin: 2rem;
 }
 #message{
   width: 195px;
