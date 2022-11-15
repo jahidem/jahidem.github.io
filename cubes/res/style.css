@@ -304,3 +304,138 @@
   color: var(--color-secondary);
   font-size: 4.8rem;
 }
+
+
+/* Footer section */
+.sec-last{
+  padding-top: 0;
+}
+.my-hr{
+  margin-bottom: 7rem;
+  width: 100%;
+  height: 1.5px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, var(--color-secondary) 0%, rgba(255,255,255,1) 95%);
+}
+.section-footer .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: auto;
+}
+.section-footer .logo-text{
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.section-footer .logo-box{
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  cursor: pointer;
+}
+.logo-about{
+  margin: 1rem 0 5rem 0;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  line-height: 2;
+  max-width: 280px;
+
+}
+.wrap-ninety{
+  width: 90%;
+  margin: 0 auto;
+
+
+}
+.logo-link{
+  display: flex;
+  justify-content: space-between;
+}
+.wrap-fooele{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-element p{
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  line-height: 2.5;
+  cursor: pointer;
+}
+.footer-element p b{
+  color: var(--color-secondary-variant)
+}
+
+.footer-element p:hover{
+  color: var(--color-primary-variant);
+}
+
+.copyright{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  line-height: 2.5;
+}
+
+/* Getstarted section  */
+
+.started-contain{
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.started-contain p{
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  line-height: 2.5;
+}
+
+.started-contain p span{
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.started-contain h2 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 5.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 500px;
+  color: black;
+}
+.input-email{
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.submit{
+  color: white;
+  background-color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-left: -4.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.form-style{
+  font-family: inherit;
+  height: 5.2rem;
+  width: 42rem;
+  border-radius: 3rem;
+  border: 0.2rem solid var(--color-secondary);
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  padding: 0 4rem 0 2rem ;
+}
+.form-style::placeholder{
+  color: var(--color-secondary);
+}
