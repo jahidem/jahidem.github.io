@@ -1,4 +1,8 @@
-
+### About me
+I'm Jahid hossain a computer enthusiast who likes to explore new technologies. I'm interested about:
+ - Machine Learning
+ - Software Architectural Patterns
+ - Dota2
 
 #### My github stats
 
