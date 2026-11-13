@@ -13,7 +13,7 @@ export function ParticleField() {
 
   const { geometry, count, home, sphere } = useMemo(() => {
     const home = sampleTextPoints(profile.firstName, profile.lastName, {
-      worldWidth: 10.5,
+      worldWidth: 8,
       density: 2,
     });
     const count = home.length / 3;

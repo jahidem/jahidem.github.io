@@ -24,7 +24,7 @@ export function CubeField() {
     for (let i = 0; i < COUNT; i++) {
       // keep a clear tunnel near the center so content stays readable
       const angle = Math.random() * Math.PI * 2;
-      const radius = 13 + Math.random() * 12;
+      const radius = 9 + Math.random() * 11;
       arr.push({
         pos: new THREE.Vector3(
           Math.cos(angle) * radius,
@@ -49,11 +49,17 @@ export function CubeField() {
     const t = state.clock.elapsedTime;
     for (let i = 0; i < COUNT; i++) {
       const c = cubes[i];
-      c.rot.x += c.spin.x * delta;
-      c.rot.y += c.spin.y * delta;
-      c.rot.z += c.spin.z * delta;
-      const pulse = 1 + Math.sin(t * 0.8 + i) * 0.04;
-      dummy.position.copy(c.pos);
+      // slow, steady turn about a fixed diagonal axis plus a gentle float
+      const turn = c.spin.x * delta * 0.5;
+      c.rot.x += turn;
+      c.rot.y += turn * 0.7;
+      const phase = c.scale * 7 + i;
+      const pulse = 1 + Math.sin(t * 0.5 + phase) * 0.03;
+      dummy.position.set(
+        c.pos.x + Math.sin(t * 0.18 + phase) * 0.6,
+        c.pos.y + Math.sin(t * 0.25 + phase * 1.3) * 0.9,
+        c.pos.z
+      );
       dummy.rotation.copy(c.rot);
       dummy.scale.setScalar(c.scale * pulse);
       dummy.updateMatrix();

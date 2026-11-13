@@ -21,10 +21,7 @@ export function Projects() {
                 <span className="project-index">0{i + 1}</span>
                 <span className="project-tag">{proj.tag}</span>
               </div>
-              <h3 className="project-name">
-                {proj.name}
-                {proj.confidential && <span className="lock" title="Confidential — shown high-level">🔒</span>}
-              </h3>
+              <h3 className="project-name">{proj.name}</h3>
               <p className="project-blurb">{proj.blurb}</p>
               <div className="project-foot">
                 <ul className="project-stack">

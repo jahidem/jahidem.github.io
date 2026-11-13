@@ -8,9 +8,9 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-color: rgba(233, 229, 221, 0.55);
-  -webkit-backdrop-filter: blur(16px) saturate(115%);
-  backdrop-filter: blur(16px) saturate(115%);
+  background-color: rgba(233, 229, 221, 0.18);
+  -webkit-backdrop-filter: blur(2px) saturate(115%);
+  backdrop-filter: blur(2px) saturate(115%);
 }
 /* Soft fade on the first panel so it eases out of the clear hero (glass only) */
 .content section#about::before {
