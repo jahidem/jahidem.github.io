@@ -49,7 +49,7 @@
   color: var(--bg);
 }
 
-/* ---------- custom 3D cube cursor ---------- */
+/* ---------- custom 3D polygon cursor ---------- */
 .cursor-dot {
   position: fixed;
   top: 0;
@@ -63,7 +63,7 @@
   border-radius: 50%;
   background: var(--fg);
 }
-.cursor-cube {
+.cursor-poly {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,45 +75,41 @@
   margin-top: -13px;
   perspective: 240px;
 }
-.cursor-cube-scale {
+.cursor-poly-scale {
   position: absolute;
   inset: 0;
   transform-style: preserve-3d;
   transition: transform 0.35s var(--ease);
 }
-.cursor-cube.is-hover .cursor-cube-scale {
+.cursor-poly.is-hover .cursor-poly-scale {
   transform: scale(1.8);
 }
-.cursor-cube-inner {
+.cursor-poly-spin {
   position: absolute;
   inset: 0;
+  overflow: visible;
   transform-style: preserve-3d;
-  animation: cube-spin 6s linear infinite;
+  animation: poly-spin 6s linear infinite;
 }
-.cursor-cube.is-hover .cursor-cube-inner {
+.cursor-poly.is-hover .cursor-poly-spin {
   animation-duration: 2.4s;
 }
-.cf {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  border: 1.4px solid rgba(10, 10, 10, 0.85);
-  background: rgba(10, 10, 10, 0.05);
+.cursor-poly-spin polygon {
+  fill: rgba(10, 10, 10, 0.06);
+  stroke: rgba(10, 10, 10, 0.85);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: fill 0.4s var(--ease), stroke 0.4s var(--ease);
 }
-.cursor-cube.is-hover .cf {
-  border-color: rgba(10, 10, 10, 1);
-  background: rgba(10, 10, 10, 0.1);
+.cursor-poly.is-hover .cursor-poly-spin polygon {
+  fill: rgba(10, 10, 10, 0.12);
+  stroke: rgba(10, 10, 10, 1);
 }
-.cf-front  { transform: translateZ(13px); }
-.cf-back   { transform: rotateY(180deg) translateZ(13px); }
-.cf-right  { transform: rotateY(90deg) translateZ(13px); }
-.cf-left   { transform: rotateY(-90deg) translateZ(13px); }
-.cf-top    { transform: rotateX(90deg) translateZ(13px); }
-.cf-bottom { transform: rotateX(-90deg) translateZ(13px); }
 
-@keyframes cube-spin {
-  0%   { transform: rotateX(-20deg) rotateY(0deg); }
-  100% { transform: rotateX(-20deg) rotateY(360deg); }
+@keyframes poly-spin {
+  0%   { transform: rotateX(-18deg) rotateY(0deg); }
+  100% { transform: rotateX(-18deg) rotateY(360deg); }
 }
 
 /* ---------- intro ---------- */
